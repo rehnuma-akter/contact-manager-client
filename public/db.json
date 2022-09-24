@@ -1,0 +1,47 @@
+[
+    {
+        "name": "Brad Gibson",
+        "company": "YouTube",
+        "email": "brad@gmail.com",
+        "title": "Youtuber",
+        "mobile": "9876546787",
+        "photo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT0g8R5VmgqDqpRCwQfw2Y9V-DM-iXS59R9hQ&usqp=CAU",
+        "groupId": "Family"
+    },
+    {
+        "name": "Glenda Kim",
+        "company": "Friend",
+        "email": "glenda@gmail.com",
+        "title": "freelancer",
+        "mobile": "8880009991",
+        "photo": "https://www.kindpng.com/picc/m/163-1636340_user-avatar-icon-avatar-transparent-user-icon-png.png",
+        "groupId": "Friend"
+    },
+    {
+        "name": "Vladeen Min",
+        "company": "Service",
+        "email": "vladeen@gmail.com",
+        "title": "Electrician",
+        "mobile": "9876546787",
+        "photo": "https://png.pngtree.com/png-clipart/20190922/original/pngtree-business-male-user-avatar-vector-png-image_4774078.jpg",
+        "groupId": "Social"
+    },
+    {
+        "name": "Kareem",
+        "photo": "https://icons.iconarchive.com/icons/graphicloads/colorful-long-shadow/256/User-icon.png",
+        "mobile": "9090909090",
+        "email": "rajan@gmail.com",
+        "company": "HCL Technologies",
+        "title": "Software Engineer",
+        "groupId": "Community"
+    },
+        {
+        "name": "Rajuk",
+        "photo": "https://icons.iconarchive.com/icons/graphicloads/colorful-long-shadow/256/User-icon.png",
+        "mobile": "9090909090",
+        "email": "rajan@gmail.com",
+        "company": "HCL Technologies",
+        "title": "Software Engineer",
+        "groupId": "Service"
+    }
+]
