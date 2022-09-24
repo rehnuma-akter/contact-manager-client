@@ -10,7 +10,7 @@ const ContactItem = ({ contact }) => {
     const handleDelete = async () => {
         let confirm = window.confirm("Are you sure to delete?");
         if (confirm) {
-        let data = await axios.delete(`http://localhost:5000/contacts/${contact._id}`).then((res) => {
+        let data = await axios.delete(`https://stormy-harbor-75663.herokuapp.com/contacts/${contact._id}`).then((res) => {
             if (res.request.status === 200) {
             toast("Deleted Successfully");
             }

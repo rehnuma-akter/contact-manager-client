@@ -7,7 +7,7 @@ const AddContact = () => {
     
     const onSubmit = data => {
         console.log(data);
-        const url = `http://localhost:5000/contacts`;
+        const url = `https://stormy-harbor-75663.herokuapp.com/contacts`;
         fetch(url, {
             method: 'POST',
             headers: {
