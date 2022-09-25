@@ -7,7 +7,7 @@ const AddContact = () => {
     
     const onSubmit = data => {
         console.log(data);
-        const url = `https://stormy-harbor-75663.herokuapp.com/contacts`;
+        const url = `https://murmuring-sea-74052.herokuapp.com/contacts`;
         fetch(url, {
             method: 'POST',
             headers: {

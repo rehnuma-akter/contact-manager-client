@@ -31,7 +31,7 @@ const Login = () => {
     }
 
     if(gError || error){
-        signInError = <small className='text-red-500   '> {error?.message || gError?.message}</small>
+        signInError = <small className='text-red-500'> {error?.message || gError?.message}</small>
     }
     
     const onSubmit = data => {

@@ -6,7 +6,7 @@ const AllContacts = ({ contact }) => {
     const [contacts, setContacts] = useState([]);
 
     useEffect(() => {
-        fetch("https://stormy-harbor-75663.herokuapp.com/contacts")
+        fetch("https://murmuring-sea-74052.herokuapp.com/contacts")
         .then((res) => res.json())
         .then((data) => setContacts(data));
     }, []);

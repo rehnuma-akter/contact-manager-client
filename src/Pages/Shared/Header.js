@@ -11,11 +11,11 @@ const Header = () => {
     };
     const menuItems = 
         <>
-            {user && <li><Link to="/welcome"></Link></li>}
+            {!user && <li><Link to="/">Home</Link></li>}
             {user && <li><Link to="/allContacts">All Contacts</Link></li>}
             {user && <li><Link to="/addContact">Add Contact</Link></li>}
             {user && <li><Link to="/favorites">Favorites</Link></li>}
-            {!user &&  <li><Link to="/">Home</Link></li>}
+            {user && <li><Link to="/welcome"></Link></li>}
             <li>
                 {user ? <button className="btn bg-primary-focus hover:bg-primary" onClick={logout}>Sign Out</button>
                     : <Link  className='bg-primary-focus ml-8 hover:bg-primary px-10' to="/login">Login</Link>

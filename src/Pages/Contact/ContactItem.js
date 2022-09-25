@@ -10,9 +10,9 @@ const ContactItem = ({ contact }) => {
     const handleDelete = async () => {
         let confirm = window.confirm("Are you sure to delete?");
         if (confirm) {
-        let data = await axios.delete(`https://stormy-harbor-75663.herokuapp.com/contacts/${contact._id}`).then((res) => {
+        let data = await axios.delete(`https://murmuring-sea-74052.herokuapp.com/contacts/${contact._id}`).then((res) => {
             if (res.request.status === 200) {
-            toast("Deleted Successfully");
+                toast("Deleted Successfully");
             }
         });
         } else {
@@ -33,9 +33,9 @@ const ContactItem = ({ contact }) => {
                     <p className='text-sm'>{title}</p>
                     <p className='font-medium'>Group: {groupId}</p>
                     <div class="card-actions">
-                        {/* <Link to={`/view/${contact._id}`}>
-                            <button class="btn btn-primary">View</button>
-                        </Link> */}
+                        <Link to='/favorites'>
+                            <button class="btn btn-primary">⭐</button>
+                        </Link>
                         <Link to={`/update/${contact._id}`}>
                             <button class="btn btn-primary">Update</button>
                         </Link>

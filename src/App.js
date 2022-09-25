@@ -10,11 +10,10 @@ import Register from "./Pages/Login/Register";
 import NotFound from "./Pages/Shared/NotFound";
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
-import RequireAuth from './Pages/Login/RequireAuth';
+import UpdateContact from "./Pages/Contact/UpdateContact";
 import { useAuthState } from "react-firebase-hooks/auth";
 import auth from "./firebase.init";
-import UpdateContact from "./Pages/Contact/UpdateContact";
-
+import RequireAuth from './Pages/Login/RequireAuth';
 
 
 
@@ -25,9 +24,9 @@ function App() {
     <div>
       <Header></Header>
       <Routes>
-        {!user && <Route path="/" element={<Home></Home>}></Route>}
+        <Route path="/" element={<Home></Home>}></Route>
         <Route
-          path="welcome"
+          path="/welcome"
           element={
             <RequireAuth>
               <Welcome></Welcome>
@@ -50,10 +49,14 @@ function App() {
             </RequireAuth>
           }
         ></Route>
-        <Route path="/update/:id" element={
-          <RequireAuth>
-            <UpdateContact></UpdateContact>
-          </RequireAuth>}></Route>
+        <Route
+          path="/update/:id"
+          element={
+            <RequireAuth>
+              <UpdateContact></UpdateContact>
+            </RequireAuth>
+          }
+        ></Route>
         <Route
           path="favorites"
           element={
